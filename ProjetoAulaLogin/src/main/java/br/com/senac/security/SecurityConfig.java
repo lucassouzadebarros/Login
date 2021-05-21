@@ -15,8 +15,8 @@ import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 @Configuration
 public class SecurityConfig extends WebSecurityConfigurerAdapter{
 	
-	private static String[] PUBLIC_MATCHERS = {"/h2-console/**", "/curso/index", "/password/**"};
-	private static String[] PUBLIC_MATCHERS_GET = {"/categoria/**", "/password/**"};
+	private static String[] PUBLIC_MATCHERS = { "/curso/index", "/password/**"};
+	private static String[] PUBLIC_MATCHERS_GET = {"/h2-console/**","/categoria/**", "/password/**"};
 	
 	@Autowired
 	private CurrentUserDetailService userDetailService;

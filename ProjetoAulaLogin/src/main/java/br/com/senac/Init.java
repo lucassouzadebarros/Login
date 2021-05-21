@@ -32,9 +32,9 @@ public class Init implements ApplicationListener<ContextRefreshedEvent>{
 		
 		Usuario usuario = new Usuario();
 		usuario.setLogin("admin");
-		usuario.setNomeCompleto("Marcelo admin");
-		usuario.setEmail("marceloestruc@uol.com.br");
-		usuario.setSenha(new BCryptPasswordEncoder().encode("123456"));
+		usuario.setNomeCompleto("Lucas Souza");
+		usuario.setEmail("lucassouzadebarros@gmail.com");
+		usuario.setSenha(new BCryptPasswordEncoder().encode("1234"));
 		
 		Role roleAdmin = new Role();
 		roleAdmin.setNomeRole("ROLE_ADMIN");

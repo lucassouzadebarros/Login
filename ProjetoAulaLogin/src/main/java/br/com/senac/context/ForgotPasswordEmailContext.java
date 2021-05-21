@@ -13,9 +13,10 @@ public class ForgotPasswordEmailContext extends AbstractEmailContext{
 		Usuario usuario = (Usuario) context;
 		put("nome",usuario.getNomeCompleto());
 		setSubject("Esqueceu sua senha");
-		setFrom("marcelo.estruc@uniriotec.br"); 
+		setFrom("lucassouzadebarros@gmail.com"); 
 		setTemplateLocation("email/forgot-password");
 		setTo(usuario.getEmail());
+		setEmail(usuario.getEmail());
 		
 	}
 	
